@@ -55,7 +55,7 @@ var budgetController = (function() {
             //[1 2 4 6 8], next ID = 9
             // ID = last ID + 1
 
-            var element = document.querySelector(`.no_item_${type}`);
+            var element = document.querySelector('.no_item_' + type);
             element.style.display = 'none';
 
             // Create new ID
@@ -98,7 +98,7 @@ var budgetController = (function() {
             }
 
             if (data.allItems[type].length === 0){
-                var element = document.querySelector(`.no_item_${type}`);
+                var element = document.querySelector('.no_item_' + type);
                 element.style.display = 'inline-block';
             }
         },
